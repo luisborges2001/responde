@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Segredos </title>
+  <title>Conteúdo Oculto</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -94,9 +94,9 @@
       <div class="online-indicator"></div>
     </div>
 
-    <h2>Segredos de Lais</h2>
-    <p>Conteúdo reservado 💙</p>
-    <p>Exclusivo para maiores de 18</p>
+    <h2>Conteúdo Oculto</h2>
+    <p>Acesso exclusivo 💙</p>
+    <p>Liberado apenas para seguidores próximos</p>
 
     <button class="btn-acessar" onclick="redirecionarWhatsApp()">Ver conteúdo</button>
   </div>
@@ -110,7 +110,7 @@
     function redirecionarWhatsApp() {
       const index = Math.floor(Math.random() * numerosWhatsApp.length);
       const numero = numerosWhatsApp[index];
-      const mensagem = encodeURIComponent("Olá, quero ver o conteúdo 🔒");
+      const mensagem = encodeURIComponent("Olá, quero ver o conteúdo oculto 🔒");
       const link = `https://wa.me/${numero}?text=${mensagem}`;
       window.location.href = link;
     }
