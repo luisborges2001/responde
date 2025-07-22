@@ -90,7 +90,7 @@
 
   <div class="container">
     <div class="profile">
-      <img src="https://i.postimg.cc/Y09sjxKY/Voc-minha-droga.jpg" alt="Lais Borges">
+      <img src="https://i.postimg.cc/L6fd6QdH/Imagem-do-Whats-App-de-2025-06-11-s-01-41-37-c17cb9b5.jpg" alt="Lais Borges">
       <div class="online-indicator"></div>
     </div>
 
@@ -98,21 +98,12 @@
     <p>Acesso exclusivo 💙</p>
     <p>Liberado apenas para seguidores próximos</p>
 
-    <button class="btn-acessar" onclick="redirecionarWhatsApp()">Ver conteúdo</button>
+    <button class="btn-acessar" onclick="redirecionarTelegram()">Ver conteúdo</button>
   </div>
 
   <script>
-    const numerosWhatsApp = [
-      '557391933072',
-      '557391288391'
-    ];
-
-    function redirecionarWhatsApp() {
-      const index = Math.floor(Math.random() * numerosWhatsApp.length);
-      const numero = numerosWhatsApp[index];
-      const mensagem = encodeURIComponent("Olá, quero ver o conteúdo oculto 🔒");
-      const link = `https://wa.me/${numero}?text=${mensagem}`;
-      window.location.href = link;
+    function redirecionarTelegram() {
+      window.location.href = "https://t.me/Primefliixbot";
     }
   </script>
 
